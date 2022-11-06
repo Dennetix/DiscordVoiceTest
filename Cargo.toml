@@ -1,0 +1,21 @@
+[package]
+name = "discord_voice_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byteorder = "1.4"
+cpal = "0.14"
+futures-util = { version = "0.3", default-features = false, features = ["sink", "std"] }
+iced = { git = "https://github.com/iced-rs/iced/", rev = "da2325d", default-features = false, features = ["tokio", "glow"] }
+opus = "0.3"
+ringbuf = "0.3"
+serde_json = "1.0"
+tokio = { version = "1.21", features = ["full"] }
+tokio-tungstenite = { version = "0.17", features = ["native-tls"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+url = "2.3"
+xsalsa20poly1305 = "0.9"
